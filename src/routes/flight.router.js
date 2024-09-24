@@ -8,7 +8,7 @@ router.route("/").get(Flight.list).post(Flight.create);
 router
   .route("/:flightId")
   .get(Flight.read)
-  .put(Flight.update) // put patch aynı
+  .put(Flight.update) 
   .patch(Flight.update)
   .delete(Flight.delete);
 

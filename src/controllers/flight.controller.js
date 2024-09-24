@@ -31,7 +31,7 @@ module.exports = {
     });
   },
   read: async (req, res) => {
-    const data = await Flight.find({ _id: req.params, flightId });
+    const data = await Flight.find({ _id: req.params.flightId });
     res.status(202).send({
       error: false,
       data,
